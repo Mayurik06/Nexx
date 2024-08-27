@@ -46,7 +46,7 @@ const page = async ({
           <span className="text-lg">Visit Site</span>
         </Link>
       ) : null}     
-      <Link href={`/projects/${params.projectId}/instructions`} className="underline text-indigo-700 flex items-center mt-2">
+      <Link href={`/projects/${params.projectId}/instruction`} className="underline text-indigo-700 flex items-center mt-2">
       <Code className="h-5 w-5 mr-2" />
       <span className="text-lg">Embed Code</span>
       </Link>

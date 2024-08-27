@@ -15,10 +15,10 @@ const page =({params}:{
            <div className="bg-blue-950 p-4 rounded-md mt-6 relative">
             <code className="text-white">
                 {`<my-widget project-id="${params.projectId}"></my-widget>`}
-                {`<script src="${process.env.WIDGET_URL}/widget.umd.js</script>`}   
+                {`<script src="${process.env.WIDGET_URL}/widget.umd.js"></script>`}   
                 
             </code>
-            <CopyBtn text={`<my-widget project="${params.projectId}"></my-widget>\n<script src="${process.env.WIDGET_URL}/widget.umd.js</script>`}/>
+            <CopyBtn text={`<my-widget project="${params.projectId}"></my-widget>\n<script src="${process.env.WIDGET_URL}/widget.umd.js"></script>`}/>
             </div>
     </div>
     )
