@@ -41,7 +41,7 @@ if(error){
     return <p>{error}</p>
 }
   return (
-    <Button onClick={() => handleCheckout(price)} disabled={loading}>
+    <Button onClick={() => handleCheckout(price)} disabled={loading} className="bg-indigo-700">
       {loading ? (
         <>
           {" "}

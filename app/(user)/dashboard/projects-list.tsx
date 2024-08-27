@@ -42,18 +42,17 @@ const ProjectList = (props: Props) => {
         ))}
         <Card className="max-w-[350px] flex flex-col h-full bg-gray-400">
           <CardHeader className="flex-1">
-            <CardTitle className="flex flex-col">
-              <Lock className="h-8 w-8 mr-2"/>
-              Upgrade to Premium</CardTitle>
-            <CardDescription>
+            <CardTitle className="flex flex-row text-sm md:text-lg items-center">
+              <Lock className="h-8 w-8 mr-2 md:h-8 md:w-8"/>
+           <span>Upgrade to Premium</span></CardTitle>
+            <CardDescription className="mt-3">
               Unlock unlimited projects and more features
             </CardDescription>
           </CardHeader>
-          <CardContent>
-            <Lock className="h-10 w-10 mx-auto" />
-          </CardContent>
-
-        <SubscribeBtn price={monthlyPlanId} />
+<div className="w-fit mx-auto mb-4">
+<SubscribeBtn price={monthlyPlanId} />
+</div>
+   
         </Card>
 
       
